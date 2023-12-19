@@ -27,9 +27,8 @@ public:
             {
                 sum=sum+t2->val;
             }
-            ListNode* newnode=new ListNode(sum%10);
+            curr->next=new ListNode(sum%10);
             carry=sum/10;
-            curr->next=newnode;
             curr=curr->next;
             if(t1)
             {
